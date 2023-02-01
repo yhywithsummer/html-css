@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 600px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            margin: 0 auto;
+        }
+
+        .damao {
+            float: left;
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .ermao {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <!-- 
+            如果不加浮动清除，子元素浮动后，父元素的高度会自动变成0，下面的元素会上来占位
+        -->
+        <!-- 清除浮动的本质是清除浮动元素脱离标准流造成的影响 
+            添加一个块级元素标签清除浮动，不能是行内元素
+            缺点 代码冗杂 -->
+        <div class="clear"></div>
+    </div>
+    <div class="footer"></div>
+</body>
+
+</html>

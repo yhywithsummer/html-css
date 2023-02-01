@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            /* overflow: hidden; */
+        }
+    </style>
+    <script src="fonts/iconfont.js"></script>
+</head>
+
+<body>
+    <!-- 精灵图缺点：
+    图片文件较大
+    图片放大缩小会失真
+    一旦图片制作完毕要换非常复杂
+    此时，有一种技术很好的解决了以上的问题，就是字体图标iconfont
+    字体图标展示的是图标但实质上是字体 -->
+    <!-- 优点
+    轻量级：一个图标字体要比一系列图像要小，一旦字体加载了，图像就会马上渲染出来，减少了服务器请求
+    灵活性：本质是文字，可以改变颜色、产生阴影、透明效果、旋转等
+    兼容性：几乎支持所有的浏览器
+    字体图标不能替代精灵技术，只是对工作中图标部分技术的提升和优化
+    -->
+    <!-- 
+        如果遇到一些结构和样式比较简单的小图标，就用字体图标
+        如果遇到一些结构和样式复杂一些的小图片，就用精灵图
+     -->
+    <!-- 
+        字体图标是一些网页常见的小图标，我们在网上直接下载即可
+        1.字体图标的下载
+        2.字体图标的引入（引入html中）
+        3.字体图标的追加（以后添加新的小图标）
+     -->
+    <!-- 字体图标下载：
+     http://icomoon.io  很全但是国外网站
+     http://www.iconfont.cn/ 阿里巴巴 免费！-->
+    <svg class="icon" aria-hidden="true">
+        <use xlink:href="#icon-jubao"></use>
+    </svg>
+</body>
+
+</html>

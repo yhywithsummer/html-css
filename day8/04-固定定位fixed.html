@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 固定定位是固定于浏览器可视区的位置，主要使用场景：可以在浏览器页面滚动时元素的位置不会变
+        选择器{position:fixed;}
+        跟父元素没有任何关系
+        不随滚动条滚动
+        固定定位不占有原先位置
+        固定定位也是脱标的，也可以看做一种绝对定位 */
+        body {
+            height: 20000px;
+        }
+
+        .dj {
+            position: fixed;
+            top: 200px;
+            right: 20px;
+        }
+
+        .w {
+            width: 600px;
+            height: 1200px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+
+        .pos {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            margin-left: 300px;
+            width: 100px;
+            height: 50px;
+            background-color: skyblue;
+
+        }
+
+        /* 小tip
+        如何紧贴版心：
+        让固定定位的盒子left:50%,走到浏览器一半的位置，再margin-left:版心宽度的一半，就可以紧贴版心右侧 */
+    </style>
+</head>
+
+<body>
+    <div class="dj">
+        <img src="pvp.png" alt="">
+    </div>
+    <div class="w">
+    </div>
+    <div class="pos"></div>
+</body>
+
+</html>

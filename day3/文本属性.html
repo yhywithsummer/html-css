@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 文字颜色 */
+        .pre {
+            color: red;
+        }
+        .six {
+            color: #ff0000;
+        }
+        .rgb {
+            color: rgb(0, 255, 234);
+        }
+        /* 最常用的是十六进制 */
+        /* 对齐文本 */
+        h1 {
+            /* 本质是让h1盒子里面的文字
+            center 居中对齐
+            right 右对齐
+            left 左对齐 */
+            text-align: center;
+        }
+        /* 装饰文本 */
+        .decoration {
+            /* 下划线
+            text-decoration: underline; */
+            /* 删除线 */
+            text-decoration: line-through;
+            /* 上划线 */
+            text-decoration: overline;
+        }
+        a {
+            text-decoration: none;
+            color:tomato;
+        }
+
+        /* 文本缩进 */
+        p {
+            /* 文本首行缩进 */
+            /* 按像素缩进 */
+            /* text-indent: 20px; */
+            /* 按文字个数缩进 em*/
+            text-indent: 2em;
+            line-height: 25px;
+        }
+        .lineh {
+            line-height: 26px;
+        }
+    </style>
+</head>
+<body>
+    <div class="pre">预订颜色</div>
+    <div class="six">16进制颜色</div>
+    <div class="rgb">rgb颜色</div>
+    <h1>居中对齐标题</h1>
+    <div class="decoration">装饰文本（划线）</div>
+    <a href="#">链接不显示下划线</a>
+    <div class="lineh">行高测试</div>
+    <p>这里进行Windows系统的安装，选择专业版（专业版功能全，后面先选择免费试用30天，最后面有破解教程，永久免费使用），点击下载（Download）。</p>
+    <p>下一步后，出现下图，让你选择安装目录到那个磁盘，建议不要装到C盘，会影响电脑运行速度，我这里装到了D盘</p>
+    <p>点击后，进入下一页面，让你将创建的项目设置路径，红色框内是默认路径，可以自己修改，黄色框是让你选择安装的Python解释器环境变量，按下拉菜单，选择你的Python解释器的路径即可</p>
+</body>
+</html>

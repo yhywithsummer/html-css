@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        video {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- video支持三种格式视频文件 MP4 WebM Ogg
+    后两种兼容性较差，最好是MP4
+    常见属性
+    autoplay 视频就绪自动播放 谷歌浏览器需要添加muted解决自动播放问题
+    controls 向用户显示播放控件
+    width
+    height  
+    loop 是否循环播放
+    preload auto（预先加载视频）none（不预加载视频）
+    src url地址
+    poster imgurl 加载等待的画面图片
+    muted 静音播放 -->
+    <video src="media/mi.mp4" autoplay="autoplay" muted="muted" controls="controls" loop="loop"
+        poster="media/mi9.jpg"></video>
+
+    <!-- audio支持三种格式视频文件 MP3 WebM Ogg
+    后两种兼容性较差，最好是MP3
+    常见属性
+    autoplay 视频就绪自动播放 谷歌浏览器需要添加muted解决自动播放问题
+    controls 向用户显示播放控件 
+    loop 是否循环播放
+    src url地址
+    muted 静音播放 -->
+    <audio src="media/music.mp3" autoplay="autoplay" controls="controls"></audio>
+</body>
+
+</html>

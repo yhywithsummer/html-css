@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 
+            透视写到被观察元素的父盒子上 
+            值是人眼到屏幕的距离 值越大图案越小
+            */
+            perspective: 500px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            transform: translate3d(400px, 100px, 100px)
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        x轴右为正
+        y轴下为正
+        z轴向外为正
+     -->
+
+    <div></div>
+</body>
+
+</html>

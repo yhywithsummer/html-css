@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            /* width: 200px; */
+            height: 200px;
+            background-color: pink;
+        }
+
+        span {
+            width: 100px;
+            height: 200px;
+            background-color: hotpink;
+        }
+
+        input {
+            width: 200px;
+            height: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 块元素
+    自己独占一行
+    高度宽度内外边距都能控制
+    宽度默认是容器的100%
+    是一个容器及盒子，里面可以放行内或者块元素 -->
+    <div>比较霸道，自己独占一行</div>瑟瑟发抖
+    <!-- 文字类的元素不能使用块级元素
+    <p>标签主要用于存放文字，所以里面不能放块级标签，尤其是<div>
+    同理 <h1>~<h6>等都是文字块级标签，里面也不能放其他元素-->
+    <p>一二三
+    <div>这里会有问题</div>
+    四五六</p>
+    <!-- 在浏览器里会变成
+    <p>一二三</p>
+    <div>这里会有问题</div>
+    "四五六"<p></p> -->
+
+    <!-- 行内元素
+    相邻元素在一行上，一行可以显示多个
+    高、宽直接设置是无效的
+    默认宽度就是它本身的宽度
+    行内元素只能容纳文本或其他行内元素 
+    
+    链接里面不能再放链接
+    <a>里面可以放块级元素，但给<a>转换一下模式更安全-->
+    <span>pink老师你怎么穿着品如的衣服</span> <strong>品如的衣服</strong>
+    <span>pink老师</span> <strong>品如的衣服</strong><br>
+
+    <!-- 行内块元素 <img /> <input /> <td>
+        既有块元素又有行内元素的特点
+        和相邻行内元素（行内块）在一行上，但是他们之间会有空白间隙。一行可以显示多个行内块元素（行内元素特点）
+        默认宽度就是它本身内容的宽度（行内元素特点）
+        高度，行高，外边距以及内边距都能控制时（块元素） -->
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

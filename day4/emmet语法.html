@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            /* 输入ta或ti可以自动联想出来 */
+            text-align: center;
+            text-indent: 2em;
+            /* 输入w100自动填补 */
+            width: 100px;
+            /* h200 */
+            height: 200px;
+            /* ti2em */
+            text-indent: 2em;
+            /* lh26px */
+            line-height: 26px;
+            /* tdn */
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 输入标签名加tab键直接生成 -->
+    <div></div>
+
+    <!-- 输入标签名*n 迅速生成n个标签 -->
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- 有父子级关系的标签，用> 例如ul>li*3  自动生成-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+    <!-- 有兄弟关系的标签用+ 如div+p -->
+    <div></div>
+    <p></p>
+
+    <!-- 输入.nav自动生成class为nav的div
+        输入#banner自动生成id为banner的div
+        如果是其他标签就是标签名+ . 或者#
+        如p.one p#gray -->
+    <div class="nav"></div>
+    <div id="banner"></div>
+    <p class="one"></p>
+    <p id="grey"></p>
+
+    <!-- $自动排序
+        .demo$*5 自动生成class为demo1到5的div
+        $表示自增 *n表示自增几个
+        注意$和*并不是一定要连在一起
+        可以将$看做生成的数字占位符 -->
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+    <div class="demo3"></div>
+    <div class="demo4"></div>
+    <div class="demo5"></div>
+
+    <!-- 在生成的标签默认显示几个字
+        标签名{} 在花括号中输入要插入的文字 -->
+    <div>在花括号中输入要插入的文字</div>
+    <!-- div{同时可以使用其他}.demo$*3 -->
+    <div class="demo1">同时可以使用其他</div>
+    <div class="demo2">同时可以使用其他</div>
+    <div class="demo3">同时可以使用其他</div>
+    <!-- div{$}*5 -->
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</body>
+
+</html>

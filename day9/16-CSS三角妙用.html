@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            float: left;
+            width: 100px;
+            height: 40px;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 14px;
+            line-height: 40px;
+        }
+
+        .box1 {
+            float: right;
+            width: 0;
+            height: 0;
+            /* 使得左右两侧变为直角三角形（非等腰） */
+            border-top: 40px solid transparent;
+            border-left: 0px solid blue;
+            border-bottom: 0px solid green;
+            border-right: 20px solid pink;
+        }
+
+        .box3 {
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: pink;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>234</span>
+        <div class="box1"></div>
+    </div>
+    <div class="box3">12345</div>
+</body>
+
+</html>

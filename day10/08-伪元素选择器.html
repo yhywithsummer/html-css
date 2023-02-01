@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        div::before {
+            /* 默认是行内元素 */
+            display: inline-block;
+            /* content必须要写 */
+            content: '我';
+            width: 20px;
+            height: 30px;
+            background-color: purple;
+        }
+
+        div::after {
+            content: 'yhy ';
+            /* float: right; */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 伪元素选择器：帮助我们利用CSS创建新标签，从而不需要HTML标签，简化HTML结构
+    ::before 在元素内部的前面插入内容（父盒子里面的前面）
+    ::after 在元素内部的后面插入内容（父盒子里面的后面）
+    before和after创建一个元素，但是属于行内元素
+    新创建的这个元素在文档树中是找不到的，因此称为伪元素
+    语法 element::after{}
+    before和after必须具有content属性
+    before在父元素内容前面创建元素，after在父元素内容的后面插入元素
+    伪元素选择器和标签选择器一样权重为1 -->
+    <div>是</div>
+</body>
+
+</html>

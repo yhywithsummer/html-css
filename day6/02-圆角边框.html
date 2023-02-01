@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 200px;
+            background-color: pink;
+            /* 变成圆角 原理是半径为npx的圆与边框相切的效果 */
+            border-radius: 10px;
+        }
+
+        .yuan {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 当width=height，border-radius为其一半时，即可画出一个圆 */
+            border-radius: 50%;
+        }
+
+        .yuanjiao {
+            width: 300px;
+            height: 100px;
+            background-color: pink;
+            /* 圆角矩形：把border-radiu设置为高度的一半 */
+            border-radius: 50px;
+        }
+
+        .radius {
+            width: 200px;
+            height: 200px;
+            color: pink;
+            /* 四个数值分别设置左上 右上 左下 右下
+            两个数值分别设置 左上右下 和 右上左下
+            三个数值是左上 和 右上左下 和右下 */
+            border-radius: 10px 30px 40px 50px;
+            /* 单独某一个：
+            border-top-left-radius
+            border-top-right-radius
+            border-bottom-right-radius
+            border-bottom-left-radius */
+        }
+    </style>
+</head>
+
+<body>
+    圆角
+    <div></div>
+    圆形盒子
+    <div class="yuan"></div>
+    圆角矩形
+    <div class="yuanjiao"></div>
+    设置不同的圆角
+    <div class="radius"></div>
+</body>
+
+</html>

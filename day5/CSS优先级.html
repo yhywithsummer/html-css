@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c {
+            color: red;
+        }
+
+        div {
+            color: pink !important;
+        }
+
+        #d {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <!--选择器               权重 
+        继承或*              0,0,0,0
+        元素选择器           0,0,0,1
+        类选择器，伪类选择器  0,0,1,0
+        ID选择器             0,1,0,0
+        行内样式style=""     1,0,0,0
+        !important重要的      无穷大
+        范围越小，权重越大
+        继承的权重是0 不论其本身权重是多少
+        a链接拥有默认样式，因此不能通过修改其父级样式来更改它
+     -->
+    <div class="c" id="d" style="color:purple;">CSS优先级</div>
+</body>
+
+</html>

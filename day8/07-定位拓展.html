@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 加了绝对定位的盒子，不能通过设置margin:auto()水平居中，但是可以通过以下计算方法实现水平和垂直居中 ps：也可以通过translate实现-->
+    <style>
+        .box {
+            position: absolute;
+            /* left 50% 父容器宽度 */
+            left: 50%;
+            /* margin 负值 往左边走 自己盒子的一半 */
+            margin-left: -100px;
+            /* 垂直居中 */
+            top: 50%;
+            margin-top: -100px;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        /* 行内元素添加绝对或者固定定位，可以直接设置宽度和高度 */
+        span {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+        }
+
+        /* 块级元素添加绝对或固定定位，如果不给宽度或高度，默认大小是内容的大小 */
+        .self {
+            position: absolute;
+            background-color: skyblue;
+        }
+
+        /* 可以看出，浮动元素也是具有相同的性质
+        原因是其脱离了标准流 
+        脱标的盒子也不会触发外边距塌陷*/
+        .float {
+            float: right;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span>123</span>
+    </div>
+    <div class="self">
+        2345
+    </div>
+    <div class="float">
+        342233
+    </div>
+</body>
+
+</html>

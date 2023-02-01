@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 在使用定位布局时，可能会出现盒子重叠的情况，此时可以使用z-index来控制盒子的先后顺序（z轴）
+    选择器 {z-index:1;}
+    数值可以是正整数、负数或是0，默认是auto 数值越大越向上
+    如果属性相同，按照书写顺序后来者居上
+    只有定位的盒子才有z-index属性
+    任何定位都会压住标准流和浮动-->
+    <style>
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+
+        }
+
+        .xiongda {
+            z-index: 2;
+            background-color: pink;
+        }
+
+        .xionger {
+            left: 30px;
+            top: 40px;
+            z-index: 1;
+            background-color: red;
+        }
+
+        .guangtouqiang {
+            left: 60px;
+            top: 70px;
+            z-index: 0;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box guangtouqiang">光头强</div>
+</body>
+
+</html>

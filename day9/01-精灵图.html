@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 为了有效减少服务器接受和发送请求的次数，提高页面加载速度，所以使用精灵图技术 精灵图就是将许多张小图片放在一张大图里*/
+        /* 精灵技术主要针对背景图片使用，就是把多个小背景整合在一张图片中 这个大图片也被称为sprites 精灵图或者雪碧图
+        移动背景图片位置，此时可以用background-position
+        移动的距离就是这个目标图片的x和y坐标，注意网页中的坐标有所不同右下正 左上负 因为一般情况下是往上往左移动，所以一般是负值
+        使用精灵图的时候需要精确测量每个小背景图片的大小和位置
+        */
+        .box1 {
+            width: 60px;
+            height: 60px;
+            /* background-color: pink; */
+            background: url(sprites.png);
+            background-position-x: -182px;
+            margin: 100px auto;
+        }
+
+        .box2 {
+            width: 27px;
+            height: 25px;
+            /* background-color: pink; */
+            background: url(sprites.png) no-repeat -155px -106px;
+            margin: 200px;
+        }
+
+        .name {
+            float: left;
+            width: 113px;
+            height: 122px;
+            background-image: url(abcd.jpg);
+        }
+
+        .y {
+
+            background-position-x: -365px;
+            background-position-y: -544px;
+        }
+
+        .h {
+            background-position-x: -213px;
+            background-position-y: -125px;
+        }
+
+        .w {
+            float: left;
+            width: 138px;
+            height: 126px;
+            background-image: url(abcd.jpg);
+            background-position-x: -114px;
+            background-position-y: -543px;
+        }
+
+        .s {
+            float: left;
+            width: 115px;
+            height: 122px;
+            background-image: url(abcd.jpg);
+            background-position-x: -252px;
+            background-position-y: -410px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="y name"></div>
+    <div class="h name"></div>
+    <div class="y name"></div>
+    <div class="w"></div>
+    <div class="s"></div>
+    <div class="y name"></div>
+</body>
+
+</html>

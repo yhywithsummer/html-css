@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-family: '微软雅黑';
+        }
+        p {
+            /* font-family: '微软雅黑' ; */
+            font-family: 'Times New Roman', Times, serif;
+            /* 各种字体之间必须用逗号隔开 默认用第一个，如果系统未安装则依次向后使用 
+             一般情况下如果有空格隔开的多个单词组成的字体，加引号
+             尽量使用系统自带字体，保证在任何用户的浏览器都能正确显示 */
+
+        }
+        /* 标题标签比较特殊 需要单独设置文字大小 */
+        h2{
+            font-size: 16px;
+        }
+        body {
+            font-size: 16px;
+        }
+        .bold {
+            /* font-weight: bold; 
+            700后不用加px，等价于bold
+            实际开发中更提倡用数字表示加粗或变细*/
+            font-weight: 700;
+        }
+        .normal {
+            /* font_weight: normal; 不加粗
+            等价于font-weight:400; */
+            font-weight: 400;
+        }
+        .italic {
+            /* 让字体倾斜 */
+            font-style: italic;
+        }
+        em {
+            /* 让字体不倾斜 */
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h2>pink的秘密</h2>
+    <h1 class="normal">pink的秘密</h1>
+    <p>那一抹众人中最亮的颜色，</p>
+    <p>优雅，淡然，又那么心中清澈。</p>
+    <p>前端总伴随着困难和犯错，</p>
+    <em>静心，坦然，攻克一个又一个。</em>
+    <p class="bold">拼死也要克服它，</p>
+    <p class="italic">这是pink的秘密也是老师最终的嘱托。</p>
+</body>
+</html>

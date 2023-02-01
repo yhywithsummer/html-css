@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            color: pink;
+            /* font-size: 12px; */
+            font: 14px/1.5 'Microsoft YaHei'
+                /* 14px/1.5 代表行高是文字大小的1.5倍 */
+                /* 由于CSS的继承性，div的子元素P也会继承div的样式(也不是所有都会继承) p inherited from div */
+        }
+
+        p {
+            font-size: 16px;
+            /* p会继承div的行高特性，其行高等于1.5倍的字体大小 */
+        }
+
+        div {
+            color: red;
+        }
+
+        /* 由于CSS的层叠性，样式相同时，最终显示的结果是最后的那个样式，也就是red
+        不相同的部分不会覆盖 */
+    </style>
+</head>
+
+<body>
+    <div>
+        CSS的层叠性
+        <p>CSS的继承性</p>
+    </div>
+</body>
+
+</html>

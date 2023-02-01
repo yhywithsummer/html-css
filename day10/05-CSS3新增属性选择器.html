@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>'
+    <style>
+        /* 有value属性值的input */
+        input[value] {
+            color: pink;
+        }
+
+        input[type=text] {
+            color: pink;
+        }
+
+        /* 以icon开头的class属性值的div */
+        div[class^=icon] {
+            color: pink;
+        }
+
+        /* 以a结尾的class属性值的div */
+        div[class$=a] {
+            color: blue;
+        }
+
+        /* class属性中含有s的div */
+        div[class*=s] {
+            color: blueviolet;
+        }
+
+        /* 以上都是权重是11  10+1*/
+    </style>
+</head>
+
+<body>
+    <!-- 利用属性选择器可以不借助类或id选择器 -->
+
+    <!-- <input type="text" name="" id="" value="请输入用户名">
+    <input type="text" name="" id="">
+    <br> -->
+
+    <!-- 属性选择器可以选择属性=值的某些元素 重点-->
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+
+    <!-- 属性选择器可以选择属性值开头的某些元素 -->
+    <div class="icon1">one</div>
+    <div class="icon2">two</div>
+    <div class="icon3">three</div>
+    <div class="icon4">four</div>
+    <div>no</div>
+
+    <!-- 属性选择器可以选择属性值结尾的某些元素 -->
+    <div class="data">data</div>
+    <div class="daaa">daaa</div>
+    <div class="dasb">dasb</div>
+</body>
+
+</html>

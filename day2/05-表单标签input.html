@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- 表单分为 
+        表单域 form 表单域的信息会提交给服务器
+        <form action="url地址" method="提交方式" name="表单域名词">
+        
+        表单控件 input 
+        
+        提示信息组成 -->
+
+    <form action="demo.php" method="get" name="name1">
+        <!-- text 用户可以向里输入任何文字 -->
+        用户名 :<input type="text" name="username" placeholder="请输入用户名" maxlength="6"> <br>
+
+        <!-- password 密码输入 -->
+        密码：<input type="password" name="psd"><br>
+
+        <!-- radio 单选按钮 -->
+        
+        性别：<label for="man">男</label><input type="radio" name="sex" id="man" value="man" checked>
+        <label for="woman">女</label><input type="radio" name="sex"  id="woman" value="woman">
+        <label for="other">其他</label><input type="radio" name="sex" id="other" value="other"><br>
+
+        <!-- checkbox 复选框 -->
+        爱好: 吃饭<input type="checkbox" name="hobby" value="eat">
+         睡觉<input type="checkbox" name="hobby" value="sleep">
+          打豆豆<input type="checkbox" name="hobby" value="nt"><br>
+        <!-- name是表单元素名字，单选框设置相同name才可以单选 -->
+        <!-- checked属性是默认勾选 -->
+
+        <!-- submit 提交按钮将数据提交到服务器 -->
+        <input type="submit" value="确定"><br>
+
+        <!-- reset 重置按钮还原表单至初始状态 -->
+        <input type="reset" value="重新填写"><br>
+
+        <!-- 普通按钮 button 后期结合js-->
+        <input type="button" value="获取验证码"> <br>
+
+        <!-- 文件域 上传文件 -->
+        上传头像：<input type="file">
+
+        <!-- label标签为input元素定义标注
+        label标签用于绑定一个表单元素，当点击label内的文本时，浏览器会自动将关闭转到或者选择对应的表单元素上 -->
+    </form>
+</body>
+</html>

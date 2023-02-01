@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 浮动的元素不会压住下面标准流的文字（content）
+            浮动产生的最初目的就是为了产生文字环绕效果 */
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .pos {
+            /* 绝对定位（固定定位）会压住下面标准流的文字 */
+            position: absolute;
+            top: 210px;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <p>这是一段文字</p>
+    <div class="clear"></div>
+    <div class="pos"></div>
+    <p>这是一段文字这是一段文字这是一段文字</p>
+</body>
+
+</html>

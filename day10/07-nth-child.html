@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* odd选择所有奇数孩子  even选择所有偶数孩子 */
+        ul :nth-child(odd) {
+            background-color: antiquewhite;
+        }
+
+        ul :nth-child(even) {
+            background-color: aqua;
+        }
+
+        /* ol :nth-child(n) 从0开始 每次加一 往后计算 里面必须是n 不能是其他字母
+        常用公式：
+        2n 偶数
+        2n+1 奇数
+        5n 5的倍数
+        n+5 从第五个开始
+        -n+5 前五个 */
+        ol :nth-child(n) {
+            background-color: pink;
+        }
+
+        /* nth-child在执行时会把所有孩子排序
+        执行的时候先看 nth-child(1)是guangtouqiang 之后回去看 前面的div 第一个孩子并不是div所以无法执行*/
+        section div:nth-child(1) {
+            color: aliceblue;
+        }
+
+        /* nth-of-type()会把指定的元素类型盒子排列序号
+        再选择该类型下的第几个元素 */
+        /* 权重是12 */
+        section div:nth-of-type(1) {
+            color: blue;
+            /* 会选第一个熊大 */
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ul>
+    <ol>
+        <li>我是第1个孩子</li>
+        <li>我是第2个孩子</li>
+        <li>我是第3个孩子</li>
+        <li>我是第4个孩子</li>
+        <li>我是第5个孩子</li>
+        <li>我是第6个孩子</li>
+        <li>我是第7个孩子</li>
+        <li>我是第8个孩子</li>
+    </ol>
+
+    <section>
+        <p>guangtouqiang</p>
+        <p>guangtouqiang</p>
+        <p>guangtouqiang</p>
+        <div>xiongda</div>
+        <div>xiongda</div>
+        <h5>xionger</h5>
+        <h5>xionger</h5>
+        <h5>xionger</h5>
+    </section>
+</body>
+
+</html>

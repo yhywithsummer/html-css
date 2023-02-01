@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix::after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            content: '';
+            display: table;
+            /* 可以将两个元素转为块级元素并且放在一行上 */
+        }
+
+        .clearfix::after {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

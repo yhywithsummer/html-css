@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 150px;
+            height: 80px;
+            background-color: pink;
+            margin: 30px auto;
+            /* 如果文字显示不开也不换行 */
+            white-space: nowrap;
+            /* 溢出隐藏 */
+            overflow: hidden;
+            /* 溢出用省略号替换 */
+            text-overflow: ellipsis;
+        }
+
+        .mul {
+            white-space: normal;
+            /* 弹性伸缩盒子显示 */
+            display: -webkit-box;
+            /* 限制行数 */
+            -webkit-line-clamp: 4;
+            /* 设置 或 检索伸缩盒子对象的子元素排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 单行文本溢出省略号 必须满足三个条件
+        先强制一行内显示文本
+        white-space:nowrap;(默认normal自动换行)
+        超出部分隐藏
+        overflow:hidden;
+        文字用省略号替代超出的部分
+        text-overflow:ellipsis; -->
+    <div>
+        唧唧复唧唧木兰当户织不问之主神但闻女叹息唧唧复唧唧木兰当户织不问之主神但闻女叹息 唧唧复唧唧木兰当户织不问之主神但闻女叹息
+    </div>
+    <!-- 多行文本溢出省略号 适合于webkit浏览器或移动端
+    overflow:hidden;
+    text-overflow:ellipsis
+    弹性伸缩盒子模型显示
+    display:-webkit -box;
+    限制在一个块显示的文本行数
+    -webket-line-clamp:2;
+    设置伸缩盒子对象的子元素排列方式
+    -webkit-box-orient: vertical; -->
+    <div class="mul">
+        唧唧复唧唧木兰当户织不问之主神但闻女叹息
+        唧唧复唧唧木兰当户织不问之主神但闻女叹息唧唧复唧唧木兰当户织不问之主神但闻女叹息 唧唧复唧唧木兰当户织不问之主神但闻女叹息
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>padding</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* padding-left: 20px;
+            padding-top: 30px; */
+            /* padding-bottom padding-right */
+
+            /* 只有一个参数：上下左右都是5px
+            padding: 5px; */
+
+            /* 两个参数：上下是5px，左右是10px
+            padding: 5px 10px; */
+
+            /* 三个参数：上边距5px 左右边距10px 下边距20px 
+            padding: 5px 10px 20px; */
+
+            /* 四个参数：顺序是上 右 下 左 顺时针 */
+            padding: 5px 10px 20px 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>盒子内容是content盒子内容是content盒子内容是content。
+        padding会影响盒子实际大小padding会影响盒子实际大小padding会影响盒子实际大小
+        解决方式：让weight和height减去相应的padding
+        如果没有指定宽度，则不会撑宽
+        就算是继承了父亲的宽，如果不手动设置也不会撑宽
+    </div>
+</body>
+
+</html>

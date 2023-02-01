@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器 父元素+子元素+孙子元素.. 最终改的是最后一个元素的样式*/
+        ol li {
+            color: pink;
+        }
+
+        ol li a {
+            text-decoration: none;
+            color: red;
+        }
+
+        .nav li a {
+            color: yellow;
+        }
+
+        /* div中有两种a，儿子a和孙子a，但后代选择器不会区别这两种a，这是就需要用到子选择器 */
+        .no a {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li>我是ol的孩子</li>
+        <li><a href="#">我是ol的孙子</a></li>
+    </ol>
+    <ul>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">不会变化</a></li>
+    </ul>
+    <ul class="nav">
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li>我是ul的孩子</li>
+        <li><a href="#">黄</a></li>
+        <li><a href="#">黄</a></li>
+        <li><a href="#">黄</a></li>
+        <li><a href="#">黄</a></li>
+    </ul>
+    <div class="no">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="#">我是孙子</a>
+        </p>
+    </div>
+</body>
+
+</html>

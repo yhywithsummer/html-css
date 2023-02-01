@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 移动盒子： 定位 盒子外边距 2d转换移动 */
+        .tr {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* transform: translate(x,y);
+            x就是x轴上移动位置
+            y就是y轴上移动位置
+            中间用逗号分割
+            */
+            /* transform: translate(100px, 100px); */
+            /* 只移动x */
+            /* transform: translate(100px, 0); */
+            /* transform: translateX(100px); */
+            /* 只移动y */
+            /* transform: translate(0,100px); */
+            transform: translateY(210px);
+            /* position: relative;
+            top: 210px; */
+            /* 相对定位和它差不多，但是相对定位一般用于做布局 translate用于做动画 */
+        }
+
+        /* translate最大的特点 不会影响到其他元素的位置 */
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- transform实现元素的位移旋转缩放等效果 -->
+    <div class="tr"></div>
+    <div class="box"></div>
+</body>
+
+</html>
